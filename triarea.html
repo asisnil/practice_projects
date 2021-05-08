@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      function func1(){  
+      var a, b, c, s, A;
+      a = parseInt(document.getElementById("aInp").value);
+      b = parseInt(document.getElementById("bInp").value);
+      c = parseInt(document.getElementById("cInp").value);
+      s = (a + b + c)/2;
+      A = Math.sqrt(s*((s-a)*(s-b)*(s-c)));
+      alert(A);}
+      </script>
+    <title>Triangle area</title>
+
+</head>
+<body>
+  <div class="container">
+  <input autocomplete="off" placeholder="Side a" class="input inputTri" type="number" id="aInp">
+  <input autocomplete="off" placeholder="Side b" class="input inputTri" type="number" id="bInp">
+  <input autocomplete="off" placeholder="Side c" class="input inputTri" type="number" id="cInp">
+</div>
+<button class="button" id="submitABC" type="submit" onclick="func1()">Submit</button>
+</body>
+</html>

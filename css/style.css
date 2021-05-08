@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #feb062;
+    font-family: 'Nunito', sans-serif;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    box-shadow:  0 0 10px #9ecaed;
+}
+.button {
+    border: black solid 3px;
+    padding: 10px;
+    background-color: #ec9947;
+    color: black;
+}
+.button:hover {
+        box-shadow: 0 0 10px #9ecaed;
+}
+.input {
+    background-color: tomato;
+    border: black solid 3px;
+    padding: 24px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    color: black;
+    font-size: large;
+    margin-right: 14px;
+}
+.container{
+    padding: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*index.html*/
+
+.htmlList {
+    list-style: none;
+    
+}
+.htmlList a {
+    text-decoration: none;
+    margin: 4px;
+}
+.htmlList li {
+    font-size: 16px;
+    padding: 26px 70px 26px 10px;
+    border: black 3px solid;
+    background-color: tomato;
+    color: black;
+    list-style: none;
+}
+.htmlList li:hover {
+     background-color: #ff5233;
+     box-shadow: 0 0 10px #9ecaed;
+}
+
+/*Print page*/
+
+.containerPp {
+    margin: 10%;
+}
+.imagePp {
+    height: 400px;
+    width: auto;
+    border: black solid 3px;
+}
+.paragraphPp {
+    background-color: tomato;
+    border: black solid 3px;
+    padding: 14px;
+    text-align: justify;
+}
+#buttonPp {
+    margin-top: 3px;
+}
+
+/*Triangle area*/
+
+.inputTri {
+    margin-top: 3px;
+}

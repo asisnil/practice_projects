@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"> 
+    <script>
+    function getTime() {
+    var today = new Date();
+    var day = today.getDay();
+    var days = ["sat", "sun", "mon", "tues", "wednes", "thurs", "fri"];
+    var hour = today.getHours();
+    var minutes = today.getMinutes();
+    var second = today.getSeconds();
+    var ampm;
+    if(hour<12){ampm="AM"}
+    else{ampm="PM"};
+    alert("Today is : " + days[day] + "day.");
+    alert("Current time : " + hour + ":" + minutes + ":" + second + " " + ampm);}
+    </script>
+    <title>Get time</title>
+</head>
+<body>
+    <div class="container">
+    <button class="button" onclick="getTime()">Get time</button>
+</div>
+</body>
+</html>
